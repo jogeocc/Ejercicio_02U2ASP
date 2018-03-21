@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{38085929-EE98-4342-B511-4D9101BC0F22}</ProjectGuid>
+    <ProjectGuid>{00DB58C2-3FED-40DA-BAAC-9B272F512446}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Principal.My.MyApplication</StartupObject>
-    <RootNamespace>Principal</RootNamespace>
-    <AssemblyName>Principal</AssemblyName>
+    <StartupObject>DesplegarResultados.My.MyApplication</StartupObject>
+    <RootNamespace>DesplegarResultados</RootNamespace>
+    <AssemblyName>DesplegarResultados</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Principal.xml</DocumentationFile>
+    <DocumentationFile>DesplegarResultados.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Principal.xml</DocumentationFile>
+    <DocumentationFile>DesplegarResultados.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -47,13 +47,13 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DesplegarResultados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DesplegarResultados\bin\Debug\DesplegarResultados.exe</HintPath>
-    </Reference>
     <Reference Include="Libreria, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Libreria\bin\Debug\Libreria.dll</HintPath>
+    </Reference>
+    <Reference Include="Principal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Principal\bin\Debug\Principal.exe</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -80,11 +80,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IngresarDatos.vb">
+    <Compile Include="DesplegarPromedio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IngresarDatos.Designer.vb">
-      <DependentUpon>IngresarDatos.vb</DependentUpon>
+    <Compile Include="DesplegarPromedio.Designer.vb">
+      <DependentUpon>DesplegarPromedio.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -104,8 +104,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="IngresarDatos.resx">
-      <DependentUpon>IngresarDatos.vb</DependentUpon>
+    <EmbeddedResource Include="DesplegarPromedio.resx">
+      <DependentUpon>DesplegarPromedio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
